@@ -1,0 +1,17 @@
+[
+{
+  "modid": "${mod_id}",
+  "name": "${mod_name}",
+  "description": "",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Kuraron"],
+  "credits": "The Forge and FML guys",
+  "logoFile": "",
+  "screenshots": [],
+  "parent": "",
+  "dependencies": []
+}
+]
