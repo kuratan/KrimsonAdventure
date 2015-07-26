@@ -1,10 +1,10 @@
-package de.kuratan.KrimsonAdventure;
+package de.kuratan.krimsonadventure;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import de.kuratan.KrimsonAdventure.lib.Reference;
+import de.kuratan.krimsonadventure.lib.Reference;
 
 
 @Mod(modid = Reference.MOD_ID, version = Reference.MOD_VERSION, name = Reference.MOD_NAME)
