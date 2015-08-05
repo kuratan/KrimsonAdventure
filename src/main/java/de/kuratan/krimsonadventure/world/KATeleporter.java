@@ -23,10 +23,12 @@ public class KATeleporter extends Teleporter {
         for (int i = -3; i < 4; i++) {
             for (int j = -3; j < 4; j++) {
                 for (int k = -3; k < 4; k++) {
-                    this.world.setBlock(entityX+i, entityY+j, entityZ+k, Blocks.air);
+                    if (this.world.getBlock(entityX+i, entityY+j, entityZ) != Blocks.bedrock) {
+                        this.world.setBlock(entityX+i, entityY+j, entityZ+k, Blocks.air);
+                    }
                 }
             }
         }
-        return false;
+        return true;
     }
 }
