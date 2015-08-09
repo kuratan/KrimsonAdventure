@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -21,8 +20,6 @@ public class KABlockGrass extends Block implements IGrowable {
     private IIcon blockIconTop;
     @SideOnly(Side.CLIENT)
     private IIcon blockIconSideSnow;
-    @SideOnly(Side.CLIENT)
-    private IIcon blockIconSideOverlay;
 
     protected KABlockGrass() {
         super(Material.grass);
@@ -38,7 +35,6 @@ public class KABlockGrass extends Block implements IGrowable {
         this.blockIcon = iconRegister.registerIcon(this.getTextureName() + "_side");
         this.blockIconTop = iconRegister.registerIcon(this.getTextureName() + "_top");
         this.blockIconSideSnow = iconRegister.registerIcon(this.getTextureName() + "_side_snowed");
-        this.blockIconSideOverlay = iconRegister.registerIcon(this.getTextureName() + "_side_overlay");
     }
 
     public void updateTick(World world, int x, int y, int z, Random random) {
